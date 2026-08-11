@@ -5,6 +5,51 @@ body{
     min-height: 100vh;
 }
 
+.grade{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
 .card{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    border: solid white;
+    border-radius: 20px;
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.img{
+    width: 90%;
+    min-width: 0;
+}
+
+.card_2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+    width:32vh;
+    margin: 8px;
+    flex-direction: column;
+    border: solid rgb(0, 149, 255);
+    border-radius: 20px;
+}
+
+.text_titulo{
+    color:rgb(0, 195, 255);
+    font-family: cursive;
+    font-size: 23px;
+    margin: 0;
+}
+
+.text_desc{
+    color: white;
+    padding: 6px;
+    margin: 0;
 }
