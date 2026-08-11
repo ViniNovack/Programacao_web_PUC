@@ -6,9 +6,8 @@ body{
 }
 
 .grade{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card{
@@ -44,7 +43,7 @@ body{
 .text_titulo{
     color:rgb(0, 195, 255);
     font-family: cursive;
-    font-size: 23px;
+    font-size: 140%;
     margin: 0;
 }
 
