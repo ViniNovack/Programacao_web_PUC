@@ -1,42 +1,27 @@
-console.log("Aqui é meu JS rodando")
+console.log("aqui é meu JS rodando!")
 const inptNome = document.getElementById("inptNome")
 const inptSenha = document.getElementById("inptSenha")
 const btnEnviar = document.getElementById("btnEnviar")
 const lblId = document.getElementById("lblId")
 
-// function click(){
-//     console.log("cliquei")
-// }
-
-// btnEnviar.onclick(this.click());
-
-// or 
-
-// btnEnviar.onclick(function(){
-//     console.log("cliquei")
-// });
-
-// or
-
-// btnEnviar.onclick(() => {
-//     console.log("cliquei")
-// })
-
+//funcao anonima
 btnEnviar.onclick = function(){
     console.log("teste")
     console.log(inptNome.value)
     console.log(inptSenha.value)
-
+    
     if(validate(inptNome.value) && validate(inptSenha.value)){
         lblId.innerHTML = "SUCESSO!"
-    } else{
+        window.location.href = "./paginas/paginaInicial.html";
+
+    }
+    else{
         lblId.innerHTML = "ERRO!"
     }
-}
+};
 
-function validate(text){
-    if(text == ""){
-        alert("ERRO!")
+function validate(texto){
+    if(texto == ""){
         return false
     }
     return true
