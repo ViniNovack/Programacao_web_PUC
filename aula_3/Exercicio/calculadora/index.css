@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    zoom: 250%;
+}
+
+.resultado{
+    display:flex;
+    background-color:white;
+    margin: 5px solid black;
+}

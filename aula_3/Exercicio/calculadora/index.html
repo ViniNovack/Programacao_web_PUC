@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input id="numero_1" class="bloco" type="number" placeholder="Digite o primeiro numero">
+    <form id="calculadora">
+        <div>
+            <input type="radio" id="soma" name="sinal" value="+">
+            <label for="soma">+</label>
+        </div>
+        <div>
+            <input type="radio" id="subtracao" name="sinal" value="-">
+            <label for="subtracao">-</label>
+        </div>
+        <div>
+            <input type="radio" id="multiplicacao" name="sinal" value="*">
+            <label for="multiplicacao">×</label>
+        </div>
+        <div>
+            <input type="radio" id="divisao" name="sinal" value="/">
+            <label for="divisao">÷</label>
+        </div>
+    </form>
+    <input id="numero_2" class="bloco" type="number" placeholder="Digite o segundo numero">
+    <button id="botao" class="botao">Calcular</button>
+    <dev class="resultado">
+        <p id="resultado"></p>
+    </dev>
+
+    <script src="./index.js" defer></script>
+</body>
+</html>
