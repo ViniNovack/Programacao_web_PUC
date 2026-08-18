@@ -1,7 +1,45 @@
 body{
-    background-color:rgb(168, 83, 248);
+    background-color:purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bloco{
     display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 20px solid pink;
+    width: 400px;
+    height: 200px;
+
+}
+
+.botao1{
+    background-color:aqua;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+}
+
+.botao2{
+    background-color: greenyellow;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+}
+
+.botao1:hover{
+    background-color: black;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 5px;
+}
+
+.botao2:hover{
+    background-color: black;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    padding: 5px;
 }
