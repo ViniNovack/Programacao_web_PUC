@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Calculadora</h1>
-    <input id="numero_1" class="bloco" type="number" placeholder="Digite o primeiro numero">
+
     <form id="calculadora">
+        <input id="numero_1" class="bloco" type="number" placeholder="Digite o primeiro numero">
         <div>
             <input type="radio" id="soma" name="sinal" value="+">
             <label for="soma">+</label>
@@ -26,10 +27,16 @@
             <input type="radio" id="divisao" name="sinal" value="/">
             <label for="divisao">÷</label>
         </div>
+        <input id="numero_2" class="bloco" type="number" placeholder="Digite o segundo numero">
     </form>
-    <input id="numero_2" class="bloco" type="number" placeholder="Digite o segundo numero">
-    <button id="botao" class="botao">Calcular</button>
-    <dev class="resultado">
+
+    <div>
+        <button id="botao" class="botao">Calcular</button>
+        <button id="voltar" class="botao">Voltar</button>
+        <button id="limpar" class="botao">Limpar</button>
+    </div>
+
+    <dev id="caixa_resultado" class="resultado escondido">
         <p id="resultado"></p>
     </dev>
 

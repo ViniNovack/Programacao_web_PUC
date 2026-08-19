@@ -7,6 +7,28 @@ body{
     zoom: 200%;
 }
 
+.resultado{
+    display:flex;
+    border: 2px solid black;
+    background-color:white;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.escondido{
+    display:none;
+}
+
+.blocao{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border: 2px solid black;
+    padding: 10px;
+}
+
 .bloco{
     margin: 5px;
 }

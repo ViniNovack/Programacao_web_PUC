@@ -4,3 +4,7 @@ const botao2 = document.getElementById("botao2")
 botao1.onclick = function(){
     window.location.href = "../calculadora/index.html";
 }
+
+botao2.onclick = function(){
+    window.location.href = "../maior_valor/exercicio.html";
+}

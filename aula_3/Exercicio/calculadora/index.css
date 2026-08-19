@@ -10,5 +10,11 @@ body{
 .resultado{
     display:flex;
     background-color:white;
-    margin: 5px solid black;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.escondido{
+    display:none
 }

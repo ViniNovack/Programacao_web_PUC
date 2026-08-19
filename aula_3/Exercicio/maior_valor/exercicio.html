@@ -9,10 +9,21 @@
 <body>
     <label>Digite os valores:</label>
 
-    <input id="primeiro_numero" class="bloco" type="number" placeholder="Digite o primeiro número">
-    <input id="segundo_numero" class="bloco" type="number" placeholder="Digite o segundo número">
-    <button id="botao" class="botao">Analizar</button>
-
+    <form id="analizar">
+        <div class="blocao">
+            <input id="primeiro_numero" class="bloco" type="number" placeholder="Digite o primeiro número">
+            <input id="segundo_numero" class="bloco" type="number" placeholder="Digite o segundo número">
+            <div>
+                <button id="botao" class="botao" type="button">Analizar</button>
+                <button id="voltar" class="botao" type="button">Voltar</button>
+                <button id="limpar" class="botao" type="button">Limpar</button>
+            </div>
+            <div id="caixa_resultado" class="resultado escondido">
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </form>
+    
     <script src="./exercicio.js" defer></script>
 </body>
 </html>
