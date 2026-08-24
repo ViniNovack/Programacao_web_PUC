@@ -1,3 +1,47 @@
 body{
-    background-color:aqua;
+    background-color:rgba(0, 85, 142, 0.646);
+}
+
+.grande{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    border: 10px solid rgb(0, 85, 142);
+    border-radius: 20px;
+    padding: 1%;
+
+    width: 20%;
+}
+
+img{
+    width: 90%;
+    min-width: 0;
+}
+
+.card_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 7px solid rgb(3, 81, 154);
+    border-radius: 20px;
+    
+    width:32vh;
+
+    padding: 1%;
+    margin:5%;
+}
+
+h1{
+    color: rgb(0, 195, 255);
+    font-family: cursive;
+    margin:0;
 }
