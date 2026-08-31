@@ -6,23 +6,13 @@ const lblId = document.getElementById("lblId")
 
 //funcao anonima
 btnEnviar.onclick = function(){
-    console.log("teste")
-    console.log(inptNome.value)
-    console.log(inptSenha.value)
-    
-    if(validate(inptNome.value) && validate(inptSenha.value)){
-        lblId.innerHTML = "SUCESSO!"
-        window.location.href = "./paginas/paginaInicial.html";
 
+
+    const data = {
+        nome:inptNome
     }
-    else{
-        lblId.innerHTML = "ERRO!"
-    }
+
+    //adicionar uma 
+    fetch()
+
 };
-
-function validate(texto){
-    if(texto == ""){
-        return false
-    }
-    return true
-}
