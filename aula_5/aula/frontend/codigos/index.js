@@ -15,7 +15,7 @@ btnEnviar.onclick = function(){
 
     //adicionar uma chamada para a minha API
 
-     fetch("http://localhost:8000/", {
+     fetch("http://localhost:8000", {
         method: "POST",
         headers:{'Content-Type': 'application/json'},
         body: JSON.stringify(data) 
