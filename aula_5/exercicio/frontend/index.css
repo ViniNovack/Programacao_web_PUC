@@ -4,6 +4,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    zoom: 160%;
 }
 
 .bloco{
