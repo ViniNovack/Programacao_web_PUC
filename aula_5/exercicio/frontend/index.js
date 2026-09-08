@@ -7,11 +7,11 @@ const enviar = document.getElementById("enviar")
 
 enviar.onclick = function(){
     const data = {
-        nome:nome.ariaValueMax,
-        cpf:cpf.ariaValueMax,
-        email:email.ariaValueMax,
-        telefone:telefone.ariaValueMax,
-        nascimento:nascimento.ariaValueMax,
+        nome:nome.value,
+        cpf:cpf.value,
+        email:email.value,
+        telefone:telefone.value,
+        nascimento:nascimento.value
     }
 
     //adicionando uma chamada para a API
