@@ -25,6 +25,4 @@ btnEnviar.onclick = function(){
     })
 
 
-
-
 };

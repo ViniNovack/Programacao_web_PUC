@@ -13,4 +13,15 @@ enviar.onclick = function(){
         telefone:telefone.ariaValueMax,
         nascimento:nascimento.ariaValueMax,
     }
+
+    //adicionando uma chamada para a API
+
+    fetch("http://localhost:8000", {
+        method: "POST",
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(data)
+    }).then(response => response.json())
+    .then(data => {
+        console.log('Sucess from PHP:', data)
+    })
 }

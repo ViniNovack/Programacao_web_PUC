@@ -38,4 +38,5 @@ echo json_encode([
     "status" => "success",
     "message" => "Hello $username, your password is $password."
 ]);
+
 ?>
