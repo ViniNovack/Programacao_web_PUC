@@ -3,42 +3,46 @@ console.log("JS RODANDO!")
 const inptNome = document.getElementById("inptNome")
 const inptIdade = document.getElementById("inptIdade")
 const btnEnviar = document.getElementById("btnEnviar")
+const tabelaDadosCorpo = document.getElementById("tabela-dados-corpo")
 
 btnEnviar.onclick = () => {
     console.log("cliquei no botão")
-
     let dados = {
         "nome": inptNome.value,
         "idade": inptIdade.value
     }
-    sendData(dados)
+    sendData(dados);
 }
 
 function sendData(data){
-    fetch("---"{
+    fetch("http://localhost:8000/cadastro-dados.php",{
         method: "POST",
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
+        headers:{'Content-Type': 'application/json'},
+        body: JSON.stringify(data) 
     }).then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => getData())
 }
 
-function getData() {
-    fetch("---")
+function getData(){
+    console.log("getData")
+    fetch("http://localhost:8000/get-dados.php")
     .then(response => response.json())
-    .then(data => dados = data)
+    .then(data => populateTable(data))
+}
+
+function populateTable(dados){
+    let resultado = dados.map(item => `
+            <tr class="linhas2">
+                <td>${item.nome}</th>
+                <td>${item.idade}</th>
+                <td>${item.timestamp}</th>
+            </tr>
+        `).join("")
+
+    tabelaDadosCorpo.innerHTML = resultado
 }
 
 getData()
-
-let resultado = dados.map(item => `
-    <tr class="linha2">
-        <td>${item.nome}</th>
-        <td>
-    `)
-
-
-
 
 
 // console.log("pagina inicial rodando!")

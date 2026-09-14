@@ -38,15 +38,28 @@
         </table>
     </div>
 
-    <div class="container"> Exercicio aula 06
-
+    <div class="container">Exercicio aula 06
         <input placeholder="Digite seu nome" id="inptNome">
+         <input placeholder="Digite sua idade" id="inptIdade">
+         <button id="btnEnviar">ENVIAR</button>
     </div>
 
     <div class="container">
         <h3>Listagem de usuarios</h3>
-        <table
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Data de criação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dados-corpo">
+
+            </tbody>
+        </table>
     </div>
+
 
     <script src="./../codigos/paginaInicial.js" defer></script>
 </body>
