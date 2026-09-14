@@ -1,0 +1,18 @@
+body{
+    background-color:rgb(179, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.content_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color:rgb(245, 2, 253);
+    border: 5px solid pink;
+    border-radius: 5px;
+}
