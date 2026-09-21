@@ -1,0 +1,26 @@
+body{
+    background-color: purple;
+    display: flex;
+}
+
+.container{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    background-color: pink;
+
+}
+
+th {
+    background-color: rgb(72, 3, 72);
+    color: white;
+
+}
