@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+th{
+    background-color:aqua;
+}
+
+tr{
+    background-color:pink;
+}
+
+tr:nth-child(even){
+    background-color:rgb(250, 164, 178);
+}
+
+.content{
+    background-color:white;
+    border:5px solid rgb(143, 142, 142);
+    border-radius: 10px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    zoom:250%;
+}
