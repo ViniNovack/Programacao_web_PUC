@@ -1,0 +1,34 @@
+body{
+    background-color:black;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+input{
+    padding:5px;
+    margin:7px;
+
+    border-radius:6px;
+}
+
+button{
+    padding:4px;
+    margin:6px;
+
+    border-radius:5px;
+}
+
+.content{
+    background-color:white;
+    border:7px solid rgb(109, 109, 109);
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+
+    zoom:250%;
+}
