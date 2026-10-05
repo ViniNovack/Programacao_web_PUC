@@ -10,4 +10,11 @@ if(file_exists("cadastro-dados.json")){
     echo json_encode([]);
 }
 
+
+
+
+
+
+
+
 ?>
