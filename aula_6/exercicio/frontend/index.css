@@ -15,4 +15,6 @@ body{
     background-color:rgb(245, 2, 253);
     border: 5px solid pink;
     border-radius: 5px;
+
+    zoom:250%;
 }
