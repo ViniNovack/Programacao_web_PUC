@@ -8,8 +8,8 @@ body{
 }
 
 .content{
-    background-color:white;
-    border:7px solid rgb(153, 151, 151);
+    background-color:pink;
+    border:7px solid rgb(255, 66, 97);
     border-radius:10px;
 
     display:flex;
