@@ -18,3 +18,5 @@ async function carregar() {
     
     corpo.innerHTML = preenchimento;
 }
+
+carregar();
