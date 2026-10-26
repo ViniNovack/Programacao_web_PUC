@@ -15,10 +15,10 @@ function populate(data){
             <td>${item.nome_aluno}</td>
         </tr>
         `).join("")
-    tabelaCorpo.innerHTML = dadosMap
+    tabela_corpo.innerHTML = dadosMap
 }
 
-btnEnviar.onclick = () => {
+botao.onclick = () => {
     const dados = {nome: nome_aluno.value}
 
     fetch("http://localhost:8000/inserir-aluno.php", {
