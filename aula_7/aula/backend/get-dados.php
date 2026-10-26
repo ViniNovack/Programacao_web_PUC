@@ -1,17 +1,14 @@
-<?php
+<?php 
+    header("Access-Control-Allow-Origin: *");
+    header("Content-Type: application/json");
 
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
+    $host = "localhost";
+    $banco = "escola";
+    $user = "root";
+    $senha = "#Marvel08";
 
-$host = "localhost";
-$banco= "escola";
-$user = "root";
-$senha = "";
-
-$pdo = new PDO("mysql:host=$host;dbname=$banco",$user,$senha);
-$sql = $pdo->query("SELECT * FROM escola.Alunos;");
-$dados = $sql->fetchAll(PDO::FETCH_ASSOC);
-echo json_encode($dados);
-
-
+    $pdo = new PDO("mysql:host=$host;dbname=$banco",$user,$senha);
+    $sql = $pdo->query("SELECT * FROM escola.Alunos;");
+    $dados = $sql->fetchAll(PDO::FETCH_ASSOC);
+    echo json_encode($dados);
 ?>
