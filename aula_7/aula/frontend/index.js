@@ -12,7 +12,7 @@ function populate(data){
     let dadosMap = data.map(item => `
         <tr>
             <td>${item.id_aluno}</td>
-            <td>${item.nome_aluno}</td>
+            <td>${item.nome}</td>
         </tr>
         `).join("")
     tabela_corpo.innerHTML = dadosMap
