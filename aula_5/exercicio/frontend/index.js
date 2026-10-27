@@ -3,6 +3,7 @@ const cpf = document.getElementById("cpf")
 const email = document.getElementById("email")
 const telefone = document.getElementById("telefone")
 const nascimento = document.getElementById("nascimento")
+const senha = document.getElementById("senha")
 const enviar = document.getElementById("enviar")
 
 enviar.onclick = function(){
@@ -11,7 +12,8 @@ enviar.onclick = function(){
         cpf:cpf.value,
         email:email.value,
         telefone:telefone.value,
-        nascimento:nascimento.value
+        nascimento:nascimento.value,
+        senha:senha.value
     }
 
     //adicionando uma chamada para a API
